@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Java Script to JSON and sending it.</title>
+</head>
+<body>
+    <p id="res"></p>
+    <h1>Converting a Java Script object to JSON string and sending it to the server. </h1>
+    <script>
+        var mo = {name:"Achyut", age:"11",grade:"6"};
+        var mj = JSON.stringify(mo);
+        var no = JSON.parse(mj);
+        document.getElementById("res").innerHTML = no.name
+        document.getElementById("res").innerHTML = no.age
+    </script>
+</body>
+</html>
